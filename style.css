@@ -35,7 +35,6 @@
 .cursor-dot.hidden {
   opacity: 0;
 }
-
 /* Scroll to Top Button Style */
 #scrollTopBtn {
   position: fixed;
@@ -63,14 +62,11 @@
   background-color: #fbc02d;
 }
 
-
 body {
   background-color: var(--color-background);
   color: var(--color-body);
   font-family: "Bai Jamjuree", sans-serif;
   overflow-x: hidden;
-  
-  
 }
 
 h1,
@@ -81,7 +77,6 @@ h5,
 h6 {
   color: var(--color-heading);
   font-weight: 700;
-  
 }
 
 a {
@@ -119,15 +114,14 @@ img {
     width: 240px;
   }
 
-  .navbar-brand img{
-    border:8px solid var(--color-brand)
+  .navbar-brand img {
+    border: 8px solid var(--color-brand);
   }
-  .content-wrapper{
+  .content-wrapper {
     padding-left: 240px;
-     
   }
-} 
-.full-height{
+}
+.full-height {
   min-height: 100vh;
   height: 100%;
   display: flex;
@@ -141,15 +135,15 @@ img {
 .btn {
   padding: 12px 28px;
   font-weight: 700;
-
 }
-.btn-brand{
+.btn-brand {
   background-color: var(--color-brand);
   border-color: var(--color-brand);
   color: var(--color-base);
 }
 
-.btn-brand:hover , .btn-brand:focus{
+.btn-brand:hover,
+.btn-brand:focus {
   background-color: var(--color-brand2);
   color: var(--color-base);
   border-color: var(--color-brand2);
@@ -158,180 +152,211 @@ img {
 .link-custom {
   font: weight 700px;
   position: relative;
-  color:  #e0f780;
+  color: #e0f780;
   text-decoration: none;
 }
 
 .link-custom:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
   border-radius: 3px;
-  background-color:#deff58;
+  background-color: #deff58;
   bottom: 0;
   left: 0;
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .link-custom:hover:before {
-  transform-origin:left;
+  transform-origin: left;
   transform: scaleX(1);
 }
 
-.text-brand{
+.text-brand {
   color: var(--color-brand);
-
 }
-.bg-base{
+.bg-base {
   background-color: var(--color-base);
-
 }
-.shadow-effect:hover{
+.shadow-effect:hover {
   box-shadow: -6px 6px 0 0 var(--color-brand);
 }
-.iconbox{
+.iconbox {
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
   font-size: 32px;
   background-color: var(--color-base);
   color: var(--color-base);
 }
-.card-custom .card-custom-img{
+.card-custom .card-custom-img {
   overflow: hidden;
 }
-/* 
-.footer {
-  background-color: var(--color-background);
-  
+
+/*start by raj */
+@media (max-width: 768px) {
+  .navbar {
+    min-height: auto; /* Adjust navbar height */
+    width: 100%; /* Ensure it spans full width */
+  }
 }
-.footer .social-icons {
+@media (max-width: 768px) {
+  .iconbox {
+    width: 50px; /* Reduce icon box size */
+    height: 50px;
+    font-size: 24px; /* Adjust icon size */
+  }
+}
+@media (max-width: 576px) {
+  .iconbox {
+    width: 40px; /* Smaller icon size on very small screens */
+    height: 40px;
+    font-size: 20px; /* Reduce icon font size */
+  }
+}
+
+.wrapper {
   display: flex;
-  justify-content: flex-end;
-}
-
-.footer .social-icons{
-  color: #9a93bd;
-  background-color: #1b1649;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display:inline-flex ;
+  flex-direction: row; /* Forces icons to be in a horizontal row */
+  justify-content: center;
   align-items: center;
-  justify-content:center;
-  margin-left: 10px;
-  text-decoration:none;
-  transition: background-color 0.3s ease,color 0.3s ease;
-}
-.footer .social-icons a {
-  color: var(--color-base);
-  transition: color 0.3s;
-  
+  flex-wrap: wrap; /* Optional: allows wrapping on small screens */
+  gap: 20px; /* Adds spacing between icons */
+  padding: 20px;
 }
 
-.footer .social-icons a:hover {
-  color: var(--color-brand); /* Change to your preferred hover color */
+@media (max-width: 768px) {
+  .wrapper {
+    /* flex-direction: column; */
+    gap: 15px; /* Adjust the gap between icons */
+    padding: 15px; /* Adjust the padding */
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    gap: 10px; /* Tighter gap on very small screens */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+}
+@media (max-width: 768px) {
+  .row > [class*="col-"] {
+    flex: 0 0 100%; /* Stack the columns */
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 24px;
+  } /* Shrink button padding */
+  .form-control {
+    font-size: 0.9rem;
+    padding: 8px 12px; /* Adjust form field padding */
+  }
+}
+@media (max-width: 576px) {
+  .btn-brand {
+    padding: 8px 20px; /* Smaller button padding */
+  }
+}
 
-  
-  
-  
-  
-  .wrapper .icon {
-    margin: 0 20px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon span {
-    height: 60px;
-    width: 60px;
-    color: #000;
-    background: #fff;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon span i {
-    line-height: 60px;
-    font-size: 25px;
-  }
-  
-  .wrapper .icon .tooltip {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background: #fff;
-    color: #fff;
-    padding: 10px 18px;
-    font-size: 16px;
-    font-weight: 15;
-    border-radius: 10px;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -70px;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  .icon .tooltip:before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: inherit;
-    left: 50%;
-    bottom: -6px;
-    transform: translateX(-50%) rotate(45deg);
-  }
-  
-  .wrapper .icon:hover span {
-    color: #fff;
-  }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-  }
-  
-  .wrapper .facebook:hover span,
-  .wrapper .facebook:hover .tooltip {
-    background: #3B5999;
-  }
-  
-  .wrapper .twitter:hover span,
-  .wrapper .twitter:hover .tooltip {
-    background: #46C1F6;
-  }
-  
-  .wrapper .instagram:hover span,
-  .wrapper .instagram:hover .tooltip {
-    background: #e1306c;
-  }
-  
-  .wrapper .github:hover span,
-  .wrapper .github:hover .tooltip {
-    background: #333;
-  }
-  
-  .wrapper .youtube:hover span,
-  .wrapper .youtube:hover .tooltip {
-    background: #DE463B;
-  }
+/* end by raj */
+.wrapper .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span {
+  height: 50px;
+  width: 50px;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span i {
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: 15;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.icon .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: inherit;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .icon:hover span {
+  color: #fff;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip {
+  background: #3b5999;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip {
+  background: #46c1f6;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip {
+  background: #e1306c;
+}
+
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip {
+  background: #333;
+}
+
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip {
+  background: #de463b;
+}
