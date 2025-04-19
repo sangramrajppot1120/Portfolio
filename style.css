@@ -8,6 +8,24 @@
   --color-brand: #e0f780;
   --color-brand2: #deff58;
 }
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.2s ease, transform 0.1s ease-out;
+}
+
+.cursor-dot.hidden {
+  opacity: 0;
+}
+
+
 
 body {
   background-color: var(--color-background);
