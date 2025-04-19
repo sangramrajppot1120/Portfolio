@@ -510,80 +510,77 @@
     <!-- end of raj code added -->
     <!-- footer section ends here -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-    <!-- animation cdn js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+<!-- animation cdn js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--text animation cdn-->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
 
-    <script>
-      var typed = new Typed(".mytext", {
-        strings: ["JavaScript Developer", "React JS Developer"],
-        typeSpeed: 100,
-        backSpeed: 150,
-        loop: true,
-      });
-    </script>
-    <script>
-      const cursorDot = document.querySelector(".cursor-dot");
-      let mouseX = 0;
-      let mouseY = 0;
-      let dotX = 0;
-      let dotY = 0;
+<!--text animation cdn-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-      // Hide when mouse leaves window
-      document.addEventListener("mouseleave", () => {
-        cursorDot.classList.add("hidden");
-      });
-
-      document.addEventListener("mouseenter", () => {
-        cursorDot.classList.remove("hidden");
-      });
-
-      document.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-      });
-
-      function animateCursor() {
-        dotX += (mouseX - dotX) * 0.1;
-        dotY += (mouseY - dotY) * 0.1;
-
-        cursorDot.style.left = dotX + "px";
-        cursorDot.style.top = dotY + "px";
-
-        requestAnimationFrame(animateCursor);
-      }
-  animateCursor();
-</script>
 <script>
-// Get the button
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-// Show the button after scrolling 20px
-window.onscroll = function () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
-};
-
-// Scroll to top when button is clicked
-scrollTopBtn.onclick = function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+  var typed = new Typed(".mytext", {
+    strings: ["JavaScript Developer", "React JS Developer"],
+    typeSpeed: 100,
+    backSpeed: 150,
+    loop: true,
+  });
 </script>
 
-  
-</body>
-</html>
-      animateCursor();
-    </script>
+<script>
+  const cursorDot = document.querySelector(".cursor-dot");
+  let mouseX = 0;
+  let mouseY = 0;
+  let dotX = 0;
+  let dotY = 0;
+
+  // Hide when mouse leaves window
+  document.addEventListener("mouseleave", () => {
+    cursorDot.classList.add("hidden");
+  });
+
+  document.addEventListener("mouseenter", () => {
+    cursorDot.classList.remove("hidden");
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animateCursor() {
+    dotX += (mouseX - dotX) * 0.1;
+    dotY += (mouseY - dotY) * 0.1;
+
+    cursorDot.style.left = dotX + "px";
+    cursorDot.style.top = dotY + "px";
+
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();  // This is the only place to call it
+</script>
+
+<script>
+  // Get the button
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show the button after scrolling 20px
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when button is clicked
+  scrollTopBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
   </body>
 </html>
