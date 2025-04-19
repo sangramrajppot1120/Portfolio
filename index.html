@@ -36,7 +36,12 @@
 
   <body>
     <div class="cursor-dot"></div>
-    
+    <!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">
+  ↑
+
+</button>
+
     
     <!--Navbar starts here-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -537,7 +542,24 @@
 
   animateCursor();
 </script>
+<script>
+// Get the button
+const scrollTopBtn = document.getElementById("scrollTopBtn");
 
+// Show the button after scrolling 20px
+window.onscroll = function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to top when button is clicked
+scrollTopBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
 
   
 </body>
