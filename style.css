@@ -325,69 +325,53 @@ img {
 /* platform end */
 /* Gallery Start */
 /* Fade-in Animation */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Fade-in Animation */
 /* Gallery Card Styling */
 .gallery-card {
-  text-align: center;
-  overflow: hidden;
-  animation: fadeInUp 1s ease-in-out;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e1e1e;
   border-radius: 20px;
-  background-color: #1e1e1e;
   padding: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  perspective: 1000px; /* Needed for 3D effect */
-}
-
-/* 3D Hover Image Container */
-.gallery-card .img-3d-wrapper {
+  text-align: center;
   transform-style: preserve-3d;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent; /* Initial border */
 }
 
-/* On Hover: Add slight 3D tilt */
-.gallery-card:hover .img-3d-wrapper {
-  transform: rotateY(8deg) rotateX(8deg);
+/* Hover effect for zooming out and border color */
+.gallery-card:hover {
+  transform: scale(0.95); /* Zoom out effect */
+  border: 2px solid #c5a4ff; /* Light purple border */
 }
 
 /* Image Styling */
 .gallery-card img {
   width: 100%;
-  height: auto;
   border-radius: 15px;
   transition: transform 0.4s ease;
-  filter: brightness(0.95);
+  filter: brightness(0.9);
 }
 
+/* Brighten image on hover */
 .gallery-card:hover img {
-  filter: brightness(1.05);
+  filter: brightness(1.1);
 }
 
 /* Caption Styling */
 .gallery-card h5 {
-  margin-top: 15px;
-  font-size: 1.1rem;
   color: #f1f1f1;
-  position: relative;
+  margin-top: 12px;
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 
+/* Reveal caption on hover */
 .gallery-card:hover h5 {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Gallery End */
 /* Achievements end */
 /* ================================= */
