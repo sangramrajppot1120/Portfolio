@@ -334,6 +334,37 @@ img {
     font-size: 20px; /* Reduce icon font size */
   }
 }
+
+/* Technologies start */
+.tech-card {
+  background-color: var(--bs-dark); /* or your theme color */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  height: 100%;
+}
+
+.tech-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.iconbox {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover .iconbox {
+  transform: rotate(6deg) scale(1.2);
+}
+
+/* end  tech*/
+/* ====================================== */
 /* work or projects  start*/
 .card-custom-img img {
   object-fit: cover;
