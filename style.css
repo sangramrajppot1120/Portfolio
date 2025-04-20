@@ -8,17 +8,14 @@
   --color-brand: #e0f780;
   --color-brand2: #deff58;
 } */
-:root {
-  --color-body: #c0c0c0;
-  --color-heading: #f8f9fa;
-  --color-base: #2e2e2e; /* Very dark gray/obsidian */
-  --color-background: #121212; /* Pure black background */
-  --color-brand: #2ecc71; /* Vibrant emerald green for a fresh accent */
-  --color-brand2: #555555; /* Medium-dark gray for subtle details */
-}
-
-
-
+:root{
+  --color-body: #c0c0c0; /* Silver gray for elegant readability */
+    --color-heading: #f0f0f0; /* Light, almost white for clear headings */
+    --color-base:#1a233b; /* Dark, slightly softer gray */
+    --color-background: #121212; /* Deep, inky black background */
+    --color-brand: #88c0d0; /* Soft, slightly desaturated blue */
+    --color-brand2: #a3be8c; /* Muted green for a subtle organic touch */
+   }
 .cursor-dot {
   width: 10px;
   height: 10px;
@@ -61,6 +58,14 @@
 #scrollTopBtn:hover {
   background-color: #fbc02d;
 }
+
+
+/* .skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+} */
+
+
 
 body {
   background-color: var(--color-background);
@@ -150,14 +155,14 @@ img {
 }
 
 .link-custom {
-  font: weight 700px;
+  font-weight: 700px;
   position: relative;
   color: #e0f780;
   text-decoration: none;
 }
 
 .link-custom:before {
-  content: "";
+  
   position: absolute;
   width: 100%;
   height: 3px;
@@ -190,7 +195,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 30px;
   background-color: var(--color-base);
   color: var(--color-base);
 }
