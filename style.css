@@ -9,111 +9,6 @@
   --color-brand2: #deff58;
 } */
 :root {
-  --color-body: #c0c0c0;
-  --color-heading: #f8f9fa;
-  --color-base: #2e2e2e; /* Very dark gray/obsidian */
-  --color-background: #121212; /* Pure black background */
-  --color-brand: #2ecc71; /* Vibrant emerald green for a fresh accent */
-  --color-brand2: #555555; /* Medium-dark gray for subtle details */
-}
-/* some effect start */
-* {
-  transition: all 0.5s ease-in-out;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-a:hover,
-button:hover {
-  transform: scale(1.05);
-  color: #007bff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* end */
-/* skeleton start*/
-
-/* end skeleton */
-.bg-base,
-.shadow-effect,
-h1,
-h3,
-p,
-li {
-  transition: all 0.4s ease-in-out;
-}
-.bg-base {
-  background-color: #f8f9fa; /* light gray or your theme */
-  transition: all 0.4s ease-in-out;
-}
-
-.shadow-effect:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-  transform: scale(1.01);
-}
-
-ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-.bg-base {
-  background-color: #f8f9fa; /* light gray or your theme */
-  transition: all 0.4s ease-in-out;
-}
-
-.shadow-effect:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-  transform: scale(1.01);
-}
-
-ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-.bg-base {
-  background-color: #f8f9fa; /* light gray or your theme */
-  transition: all 0.4s ease-in-out;
-}
-
-.shadow-effect:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-  transform: scale(1.01);
-}
-
-ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-.bg-base {
-  background-color: #f8f9fa; /* light gray or your theme */
-  transition: all 0.4s ease-in-out;
-}
-
-.shadow-effect:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-  transform: scale(1.01);
-}
-
-ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-:root {
   --color-body: #c0c0c0; /* Silver gray for elegant readability */
   --color-heading: #f0f0f0; /* Light, almost white for clear headings */
   --color-base: #1a233b; /* Dark, slightly softer gray */
@@ -197,9 +92,8 @@ a:hover {
 img {
   width: 100%;
 }
-
-/*custom css for navbar*/
-
+/* ============================= */
+/*custom css for navbar start*/
 .navbar {
   background-color: var(--color-base);
 }
@@ -236,7 +130,7 @@ img {
 .navbar-brand img:hover {
   transform: scale(1.02) rotate(360deg); /* Zoom OUT effect (90% of original size) */
 }
-
+/* nave end   */
 .full-height {
   min-height: 100vh;
   height: 100%;
@@ -334,7 +228,7 @@ img {
     font-size: 20px; /* Reduce icon font size */
   }
 }
-
+/* =========================== */
 /* Technologies start */
 .tech-card {
   background-color: var(--bs-dark); /* or your theme color */
