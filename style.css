@@ -40,7 +40,7 @@
   z-index: 99;
   width: 50px;
   height: 50px;
-  background-color:#88c0d0 ; /* Yellow */
+  background-color: #fdd835; /* Yellow */
   color: black;
   border: none;
   outline: none;
@@ -55,7 +55,7 @@
 }
 
 #scrollTopBtn:hover {
-  background-color: #6babbc;
+  background-color: #fbc02d;
 }
 
 /* .skill-card:hover {
@@ -160,7 +160,7 @@ img {
 }
 
 .link-custom {
-  font-weight: 700;
+  font-weight: 700px;
   position: relative;
   color: #e0f780;
   text-decoration: none;
@@ -591,14 +591,14 @@ textarea.form-control {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 
-.wrapper .email:hover span,
-.wrapper .email:hover .tooltip {
-  background: #D44638; /* Email Red (or Gmail-inspired) */
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip {
+  background: #3b5999;
 }
 
-.wrapper .linkedin:hover span,
-.wrapper .linkedin:hover .tooltip {
-  background: #0077b5;
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip {
+  background: #46c1f6;
 }
 
 .wrapper .instagram:hover span,
@@ -611,11 +611,8 @@ textarea.form-control {
   background: #333;
 }
 
-.wrapper .telegram:hover span,
-.wrapper .telegram:hover .tooltip {
-  background: #229ED9; /* Telegram Blue */
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip {
+  background: #de463b;
 }
-
 /* the social media end */
-
-
