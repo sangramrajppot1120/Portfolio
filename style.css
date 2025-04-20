@@ -16,8 +16,103 @@
   --color-brand: #2ecc71; /* Vibrant emerald green for a fresh accent */
   --color-brand2: #555555; /* Medium-dark gray for subtle details */
 }
+/* some effect start */
+* {
+  transition: all 0.5s ease-in-out;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+a:hover,
+button:hover {
+  transform: scale(1.05);
+  color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* end */
+/* skeleton start*/
+
+/* end skeleton */
+.bg-base,
+.shadow-effect,
+h1,
+h3,
+p,
+li {
+  transition: all 0.4s ease-in-out;
+}
+.bg-base {
+  background-color: #f8f9fa; /* light gray or your theme */
+  transition: all 0.4s ease-in-out;
+}
+
+.shadow-effect:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.bg-base {
+  background-color: #f8f9fa; /* light gray or your theme */
+  transition: all 0.4s ease-in-out;
+}
+
+.shadow-effect:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.bg-base {
+  background-color: #f8f9fa; /* light gray or your theme */
+  transition: all 0.4s ease-in-out;
+}
+
+.shadow-effect:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.bg-base {
+  background-color: #f8f9fa; /* light gray or your theme */
+  transition: all 0.4s ease-in-out;
+}
+
+.shadow-effect:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
 
 .cursor-dot {
   width: 10px;
@@ -50,13 +145,12 @@
   cursor: pointer;
   border-radius: 50%;
   font-size: 24px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 #scrollTopBtn:hover {
   background-color: #fbc02d;
@@ -121,6 +215,16 @@ img {
     padding-left: 240px;
   }
 }
+/* nav image  */
+.navbar-brand img {
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.02) rotate(360deg); /* Zoom OUT effect (90% of original size) */
+}
+
 .full-height {
   min-height: 100vh;
   height: 100%;
@@ -150,7 +254,7 @@ img {
 }
 
 .link-custom {
-  font: weight 700px;
+  font-weight: 700px;
   position: relative;
   color: #e0f780;
   text-decoration: none;
@@ -219,7 +323,115 @@ img {
     font-size: 20px; /* Reduce icon font size */
   }
 }
+/* work or projects  start*/
+.card-custom-img img {
+  object-fit: cover;
+  height: 250px;
+  transition: transform 0.6s ease;
+}
 
+.card-custom:hover .card-custom-img img {
+  transform: scale(1.5);
+}
+
+.card-custom-content h4 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.link-custom {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link-custom:hover {
+  text-decoration: underline;
+}
+/* end */
+
+/* services stert */
+.iconbox {
+  background-color: #ffffff10;
+  padding: 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.iconbox:hover {
+  transform: scale(1.1);
+}
+
+.text-brand {
+  /* color: #ff4d4d; Or your theme color */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* end */
+
+/* contact start */
+.text-brand {
+  /* color: #ff4d4d; Or your theme highlight color */
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+}
+
+.btn-brand {
+  /* background-color: #ff4d4d; */
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-brand:hover {
+  background-color: #e03e3e;
+}
+
+textarea.form-control {
+  resize: none;
+}
+/* Apply light gray placeholder color */
+/* Light gray placeholder with transition */
+.form-control::placeholder {
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+/* Smooth input effects */
+.form-control {
+  background-color: #1e1e1e; /* dark background (optional) */
+  color: #ffffff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+}
+
+/* On focus, animate border and placeholder */
+.form-control:focus {
+  border-color: #00bcd4; /* highlight color */
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.form-control:focus::placeholder {
+  color: #999999;
+}
+/* end */
+
+/* footer start */
+/* Social Icon Wrapper */
 .wrapper {
   display: flex;
   flex-direction: row; /* Forces icons to be in a horizontal row */
@@ -315,7 +527,9 @@ img {
   opacity: 1;
   pointer-events: auto;
 }
-
+.icon {
+  justify-content: center;
+}
 .icon .tooltip:before {
   position: absolute;
   content: "";
@@ -360,3 +574,4 @@ img {
 .wrapper .youtube:hover .tooltip {
   background: #de463b;
 }
+/* the social media end */
