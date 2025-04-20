@@ -7,4 +7,4 @@ where to and what to i have to change ?
 improve formate and js
 
 # Raj
-samju you have to improve Technologies section 
+sanju you have to improve Technologies section 
