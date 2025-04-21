@@ -517,7 +517,7 @@ textarea.form-control {
   height: 50px;
   width: 50px;
   color: #000;
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
   position: relative;
   z-index: 2;
@@ -535,7 +535,7 @@ textarea.form-control {
   top: 0;
   z-index: 1;
   background: #fff;
-  color: #fff;
+  color: #4c92ee;
   padding: 10px 18px;
   font-size: 16px;
   font-weight: 15;
@@ -566,7 +566,7 @@ textarea.form-control {
 }
 
 .wrapper .icon:hover span {
-  color: #fff;
+  color: #ece9e687;
 }
 
 .wrapper .icon:hover span,
