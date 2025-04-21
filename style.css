@@ -98,15 +98,30 @@ img {
   background-color: var(--color-base);
 }
 
+/* Navbar Link Normal Style */
 .navbar .nav-link {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  transition: transform 0s ease, color 0s ease, box-shadow 0.1s ease, background-color 0.5s ease;
+  position: relative;
 }
 
+/* Hover Effect */
 .navbar .nav-link:hover {
-  color: var(--color-brand);
+  color: var(--color-brand); /* Hover color */
+  transform: scale(0.95); /* Zoom-out effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
 }
+
+/* Click/Active Effect */
+.navbar .nav-link:active {
+  color: #fff; /* Text color when clicked */
+  background-color: rgba(223, 184, 184, 0.136); /* Red background on click */
+  box-shadow: 0 0 20px 10px rgba(37, 32, 32, 0.6); /* Red blast shadow */
+  transform: scale(1.5); /* Slightly increase size to simulate a "blast" */
+}
+
 
 @media (min-width: 992px) {
   .navbar {
@@ -118,7 +133,7 @@ img {
     border: 8px solid var(--color-brand);
     border-radius: 50%;
     width: 200px; /* Set width */
-    height:200px;
+    height: 200px;
     transition: transform 1.5s ease;
     transform-style: preserve-3d;
   }
