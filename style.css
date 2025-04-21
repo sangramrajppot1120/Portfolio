@@ -113,20 +113,19 @@ img {
     min-height: 100vh;
     width: 240px;
   }
-
+  /* nav image  */
   .navbar-brand img {
     border: 8px solid var(--color-brand);
+    border-radius: 50%;
+    width: 200px; /* Set width */
+    height:200px;
+    transition: transform 1.5s ease;
+    transform-style: preserve-3d;
   }
   .content-wrapper {
     padding-left: 240px;
   }
 }
-/* nav image  */
-.navbar-brand img {
-  transition: transform 0.6s ease;
-  transform-style: preserve-3d;
-}
-
 .navbar-brand img:hover {
   transform: scale(1.02) rotate(360deg); /* Zoom OUT effect (90% of original size) */
 }
