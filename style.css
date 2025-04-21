@@ -103,7 +103,8 @@ img {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  transition: transform 0s ease, color 0s ease, box-shadow 0.1s ease, background-color 0.5s ease;
+  transition: transform 0s ease, color 0s ease, box-shadow 0.1s ease,
+    background-color 0.5s ease;
   position: relative;
 }
 
@@ -121,7 +122,6 @@ img {
   box-shadow: 0 0 20px 10px rgba(37, 32, 32, 0.6); /* Red blast shadow */
   transform: scale(1.5); /* Slightly increase size to simulate a "blast" */
 }
-
 
 @media (min-width: 992px) {
   .navbar {
@@ -385,7 +385,11 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
-
+/* Increase image size by 50% when clicked */
+.gallery-card:active img {
+  transform: scale(1.35); /* Increase image size to 150% */
+  transition: transform 0.2s ease; /* Increase duration to 0.8s for smooth zoom effect */
+}
 /* Gallery End */
 /* Achievements end */
 /* ================================= */
