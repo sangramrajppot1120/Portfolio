@@ -589,38 +589,26 @@
       <!-- Contact Form -->
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <form action="https://api.web3forms.com/submit" method="post" class="row g-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <!-- Access key (hidden) -->
-            <input name="access_key" type="hidden" value="f3902f91-29e1-4424-85e8-8f56a256dd25">
-            
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="f3902f91-29e1-4424-85e8-8f56a256dd25" />
+          
+            <!-- Auto Response -->
+            <input type="hidden" name="auto_response" value="Thank you for contacting me! I have received your message and will get back to you soon." />
+          
             <!-- Name -->
-            <div class="col-12">
-              <input name="name" type="text" class="form-control" placeholder="Enter your name" required />
-            </div>
-            
+            <input type="text" name="name" placeholder="Your Name" required />
+          
             <!-- Email -->
-            <div class="col-12">
-              <input name="email" type="email" class="form-control" placeholder="Enter your email" required />
-            </div>
-            
-            <!-- Subject -->
-            <div class="col-12">
-              <input name="subject" type="text" class="form-control" placeholder="Enter subject" required />
-            </div>
-            
+            <input type="email" name="email" placeholder="Your Email" required />
+          
             <!-- Message -->
-            <div class="col-12">
-              <textarea name="message" rows="5" class="form-control" placeholder="Enter your message" required></textarea>
-            </div>
-            
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          
             <!-- Submit Button -->
-            <div class="col-12 d-grid">
-              <button type="submit" class="btn btn-brand" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                Contact Me
-              </button>
-            </div>
-            
+            <button type="submit">Send</button>
           </form>
+          
         </div>
       </div>
       
