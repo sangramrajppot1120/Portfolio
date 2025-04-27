@@ -589,26 +589,28 @@
       <!-- Contact Form -->
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <form action="#" class="row g-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <form action="https://api.web3forms.com/submit" method="post" class="row g-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <!-- Access key (hidden) -->
+            <input name="access_key" type="hidden" value="f3902f91-29e1-4424-85e8-8f56a256dd25">
             
             <!-- Name -->
             <div class="col-12">
-              <input type="text" class="form-control" placeholder="Enter your name" required />
+              <input name="name" type="text" class="form-control" placeholder="Enter your name" required />
             </div>
             
             <!-- Email -->
             <div class="col-12">
-              <input type="email" class="form-control" placeholder="Enter your email" required />
+              <input name="email" type="email" class="form-control" placeholder="Enter your email" required />
             </div>
             
             <!-- Subject -->
             <div class="col-12">
-              <input type="text" class="form-control" placeholder="Enter subject" required />
+              <input name="subject" type="text" class="form-control" placeholder="Enter subject" required />
             </div>
             
             <!-- Message -->
             <div class="col-12">
-              <textarea rows="5" class="form-control" placeholder="Enter your message" required></textarea>
+              <textarea name="message" rows="5" class="form-control" placeholder="Enter your message" required></textarea>
             </div>
             
             <!-- Submit Button -->
@@ -622,9 +624,6 @@
         </div>
       </div>
       
-    </div>
-  </section>
-        <!-- Contact section ends here -->
       <!--wrapper content ends here social media-->
       <!-- social media -->
       <!-- Added by raj -->
